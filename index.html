@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online tool for Base64 encoding and decoding. Simple and fast!">
+    <meta name="keywords" content="Base64, codificação, decodificação, ferramenta online, Base64 decode, Base64 encode">
+    <title>Base64 Decode and Encode</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para o CSS da Página Inicial -->
+    <script src="js/script.js" defer></script> <!-- Link para o JavaScript -->
+</head>
+<body>
+
+    <!-- Anúncio Google na lateral esquerda -->
+    <div class="adsense left">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width: 200px; height: 600px;"
+             data-ad-client="ca-pub-XXXXXX"  <!-- Substitua pelo seu ID de cliente -->
+             data-ad-slot="XXXXXX"            <!-- Substitua pelo seu ID de slot de anúncio -->
+             data-ad-format="vertical"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Container Principal (limita a largura do conteúdo) -->
+    <div class="container">
+
+        <!-- Cabeçalho -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Base64 Tool</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="encode.html">Codificar</a></li>
+                    <li><a href="decode.html">Decodificar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção Principal -->
+        <section class="intro">
+            <h2>Bem-vindo à Ferramenta Online de Codificação e Decodificação Base64!</h2>
+            <p>
+                Base64 é uma técnica de codificação que transforma dados binários em texto, tornando-os mais fáceis de transportar em formatos que não permitem dados binários diretamente.
+            </p>
+            <div class="features">
+                <div class="feature-box">
+                    <h3>Codificação Base64</h3>
+                    <p>Transforme seu texto ou arquivos em Base64 facilmente com esta ferramenta.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Decodificação Base64</h3>
+                    <p>Desfaça a codificação Base64 para obter o texto original ou o arquivo correspondente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explicação sobre Base64 -->
+        <section class="about">
+            <h2>O que é Base64?</h2>
+            <p>
+                Base64 é um algoritmo de codificação que converte dados binários em texto ASCII, permitindo que eles sejam transmitidos de forma segura em sistemas que lidam apenas com texto. Essa codificação é amplamente utilizada para transferir arquivos em e-mails ou em URLs.  
+                Além disso, o Base64 é essencial em aplicações web para armazenar imagens em formato de string, embutir arquivos em documentos JSON e XML, além de ser muito usado em autenticação de API através do esquema <strong>Basic Authentication</strong>.
+            </p>
+
+            <h3>Exemplo de Codificação Base64:</h3>
+            <p>
+                No exemplo abaixo, a frase "Olá Mundo!" é convertida para Base64, resultando em um conjunto de caracteres que pode ser transmitido com segurança em diferentes sistemas.
+            </p>
+            <pre>
+                Texto original: "Olá Mundo!"
+                Codificado: "T2zDoSBNdW5kbyE="
+            </pre>
+
+            <h3>Exemplo de Decodificação Base64:</h3>
+            <p>
+                Agora, vamos reverter o processo, transformando a string codificada de volta ao seu formato original:
+            </p>
+            <pre>
+                Codificado: "T2zDoSBNdW5kbyE="
+                Decodificado: "Olá Mundo!"
+            </pre>
+            <p>
+                Como podemos ver, a conversão Base64 é <strong>reversível</strong>, tornando-se uma técnica útil para armazenar e transmitir dados de forma segura sem perda de informação.
+            </p>
+
+        </section>
+
+        <!-- História e Contexto -->
+        <section class="history">
+            <h2>História da Codificação Base64</h2>
+            <p>
+                O algoritmo Base64 foi desenvolvido como parte da especificação MIME (Multipurpose Internet Mail Extensions), que permite a transmissão de arquivos binários através de protocolos como o SMTP (protocolo de e-mail). Com o tempo, a técnica foi amplamente adotada na web para codificar dados binários em uma forma textual segura para ser transmitida por meio de sistemas que só aceitam texto.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Anúncio Google na lateral direita -->
+    <div class="adsense right">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width: 200px; height: 600px;"
+             data-ad-client="ca-pub-XXXXXX"  <!-- Substitua pelo seu ID de cliente -->
+             data-ad-slot="XXXXXX"            <!-- Substitua pelo seu ID de slot de anúncio -->
+             data-ad-format="vertical"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Base64 Tool. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Base64 Encoder & Decoder",
+            "description": "Ferramenta online gratuita para codificar e decodificar Base64.",
+            "applicationCategory": "Utility",
+            "operatingSystem": "All"
+        }
+    </script>
+        
+
+</body>
+</html>

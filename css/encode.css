@@ -1,0 +1,227 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para a Página Codificar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 0; /* Remove padding extra no topo */
+    overflow-y: auto; /* Adiciona rolagem para o site todo */
+}
+
+/* Estilos para os Anúncios */
+.adsense {
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 200px;
+    height: 600px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adsense.left {
+    left: 0;
+}
+
+.adsense.right {
+    right: 0;
+}
+
+/* Estilo do container principal fixado no topo e centralizado */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px;
+    /*background-color: white;*/
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    margin: 0;
+    margin-top: 0; /* Garante que o container inicie logo após o header */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    position: relative; /* Cabeçalho dentro do container */
+    z-index: 1000;
+    margin: 0; /* Remove qualquer margem do header */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+}
+
+header nav .nav-links {
+    list-style-type: none;
+}
+
+header nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Codificar */
+.encode-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 100px; /* Ajuste para dar mais espaço após o container fixo */
+    border-radius: 12px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    width: 90%;
+    max-width: 900px; /* Limita a largura máxima da seção */
+    margin: 100px auto; /* Centraliza a seção */
+    transition: transform 0.3s ease-in-out; /* Animação suave para efeitos interativos */
+    flex: 1; /* Garante que a encode-section ocupe o espaço restante */
+}
+
+.encode-section:hover {
+    transform: translateY(-2px); /* Eleva a seção quando o usuário passa o mouse sobre */
+}
+
+.encode-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.encode-section textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+    resize: vertical;
+    background-color: #f9f9f9; /* Fundo levemente mais claro */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    transition: border-color 0.3s ease;
+}
+
+.encode-section textarea:focus {
+    border-color: #4CAF50;
+    outline: none; /* Remove a borda padrão de foco */
+}
+
+
+.encode-section button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.encode-section button:hover {
+    background-color: #45a049;
+    transform: translateY(-1px); /* Leve elevação no botão */
+}
+
+.encode-section button:active {
+    transform: translateY(1px); /* Suaviza o clique no botão */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative; /* Faz o footer ficar dentro do container */
+    margin-top: auto; /* Faz com que o footer vá para o final do container */
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+
+/* Estilo para a área de notificações */
+.notification-area {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    z-index: 1000;
+}
+
+/* Estilo para as notificações */
+.notification {
+    padding: 15px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    opacity: 0;  /* Inicia invisível para animação */
+    transform: translateY(20px); /* Animação de entrada */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação suave */
+}
+
+/* Notificação de sucesso (verde) */
+.notification.success {
+    background-color: #4CAF50;
+}
+
+/* Notificação de erro (vermelha) */
+.notification.error {
+    background-color: #f44336;
+}
+
+/* Quando a notificação está visível */
+.notification.show {
+    opacity: 1;
+    transform: translateY(0); /* Desfaz o deslocamento inicial */
+}
+
+/* Quando a notificação vai sair (desaparecendo) */
+.notification.hide {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Quando a notificação não está visível */
+.notification.hidden {
+    display: none;
+}

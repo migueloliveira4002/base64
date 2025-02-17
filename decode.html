@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Decodifique dados em Base64 facilmente com nossa ferramenta online gratuita.">
+    <title>Decodificar Base64</title>
+    <link rel="stylesheet" href="css/decode.css"> <!-- Link para o CSS da Página Decodificar -->
+    <script src="js/script.js" defer></script> <!-- Link para o JavaScript -->
+</head>
+<body>
+
+    <!-- Anúncio Google na lateral esquerda -->
+    <div class="adsense left">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width: 200px; height: 600px;"
+             data-ad-client="ca-pub-XXXXXX"  <!-- Substitua pelo seu ID de cliente -->
+             data-ad-slot="XXXXXX"            <!-- Substitua pelo seu ID de slot de anúncio -->
+             data-ad-format="vertical"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Container Principal (limita a largura do conteúdo) -->
+    <div class="container">
+
+        <!-- Cabeçalho -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Base64 Tool - Decodificar</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="encode.html">Codificar</a></li>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção Decodificar -->
+        <section class="decode-section">
+            <h2>Decodifique seus dados em Base64</h2>
+            
+            <!-- Upload de Arquivo Base64 (acima da caixa de texto) -->
+            <input type="file" id="fileUpload" onchange="handleFileUpload(event)" />
+            <p><strong>Ou cole o texto Base64 na caixa abaixo:</strong></p>
+            
+            <!-- Campo de Texto Base64 -->
+            <textarea id="inputTextDecode" placeholder="Cole seu texto codificado em Base64 aqui..." rows="10" cols="50"></textarea>
+
+            <!-- Botão de Decodificação -->
+            <button onclick="decodeBase64()">Decodificar</button>
+
+            <!-- Área para exibir o conteúdo decodificado -->
+            <textarea id="decodedText" placeholder="Seu texto decodificado aparecerá aqui..." rows="10" cols="50" readonly></textarea>
+        </section>
+
+    </div>
+
+    <!-- Anúncio Google na lateral direita -->
+    <div class="adsense right">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width: 200px; height: 600px;"
+             data-ad-client="ca-pub-XXXXXX"  <!-- Substitua pelo seu ID de cliente -->
+             data-ad-slot="XXXXXX"            <!-- Substitua pelo seu ID de slot de anúncio -->
+             data-ad-format="vertical"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Base64 Tool. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

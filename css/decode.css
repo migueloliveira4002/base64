@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para a Página Decodificar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para os Anúncios */
+.adsense {
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 200px;
+    height: 600px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adsense.left {
+    left: 0;
+}
+
+.adsense.right {
+    right: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px;
+    /*background-color: white;*/
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+}
+
+header nav .nav-links {
+    list-style-type: none;
+}
+
+header nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Decodificar */
+.decode-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 100px; /* Ajuste para dar mais espaço após o container fixo */
+    border-radius: 12px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    width: 90%;
+    max-width: 900px; /* Limita a largura máxima da seção */
+    margin: 100px auto; /* Centraliza a seção */
+    transition: transform 0.3s ease-in-out; /* Animação suave para efeitos interativos */
+}
+
+.decode-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.decode-section textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+    resize: vertical;
+    background-color: #f9f9f9; /* Fundo levemente mais claro */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    transition: border-color 0.3s ease;
+}
+
+.decode-section textarea:focus {
+    border-color: #4CAF50;
+    outline: none; /* Remove a borda padrão de foco */
+}
+
+.decode-section button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.decode-section button:hover {
+    background-color: #45a049;
+    transform: translateY(-1px); /* Leve elevação no botão */
+}
+
+.decode-section button:active {
+    transform: translateY(1px); /* Suaviza o clique no botão */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

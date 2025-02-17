@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Codifique dados em Base64 facilmente com esta ferramenta online gratuita.">
+    <title>Codificar Base64</title>
+    <link rel="stylesheet" href="css/encode.css"> <!-- Link para o CSS da Página Codificar -->
+    <script src="js/script.js" defer></script> <!-- Link para o JavaScript -->
+</head>
+<body>
+
+    <!-- Anúncio Google na lateral esquerda -->
+    <div class="adsense left">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width: 200px; height: 600px;"
+             data-ad-client="ca-pub-XXXXXX"  <!-- Substitua pelo seu ID de cliente -->
+             data-ad-slot="XXXXXX"            <!-- Substitua pelo seu ID de slot de anúncio -->
+             data-ad-format="vertical"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Container Principal (limita a largura do conteúdo) -->
+    <div class="container">
+
+        <!-- Cabeçalho -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Base64 Tool - Codificar</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="decode.html">Decodificar</a></li>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção Codificar -->
+        <section class="encode-section">
+            <h2>Codifique seus dados em Base64</h2>
+            <textarea id="inputText" placeholder="Digite ou cole seu texto aqui..." rows="10" cols="50"></textarea>
+            <button onclick="encodeBase64()">Codificar</button>
+            <textarea id="encodedText" placeholder="Seu texto codificado aparecerá aqui..." rows="10" cols="50" readonly></textarea>
+            <button onclick="copyToClipboard('encodedText')">Copiar</button>
+
+        </section>
+
+    </div>
+
+    <!-- Anúncio Google na lateral direita -->
+    <div class="adsense right">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width: 200px; height: 600px;"
+             data-ad-client="ca-pub-XXXXXX"     <!-- Substitua pelo seu ID de cliente -->
+             data-ad-slot="XXXXXX"            <!-- Substitua pelo seu ID de slot de anúncio -->
+             data-ad-format="vertical"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Base64 Tool. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Área de Notificação -->
+    <div id="notificationArea" class="notification-area">
+        <div id="notification" class="notification hidden">
+            <span id="notificationMessage"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
